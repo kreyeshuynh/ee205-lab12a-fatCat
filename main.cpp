@@ -1,6 +1,20 @@
 #include <iostream>
 
+#include "Weight.h"
+
+using namespace std;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    cout << "Starting fatCat" << endl ;
+
+    Weight noWeight;
+    noWeight.dump();
+    cout << "noWeight = " << noWeight << endl;
+
+    Weight myWeight( 3.14, Weight::KILO, 20 );
+    myWeight.dump();
+    cout << "myWeight = " << myWeight << endl ;
+
+    cout << "Done with fatCat" << endl;
     return 0;
 }
